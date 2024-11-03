@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Source Sans";
+  src: url("sourcesanspro-regular-webfont.woff") format("woff2"),
+    url("sourcesanspro-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 12px;
+}
+
+section {
+  margin-bottom: 24px;
+  width: 200px;
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+}
+
+p {
+  color: black;
+  text-align: left;
+  font-size: 20px;
+  font-family: "Source Sans", sans-serif;
+}
+
+.p-align-last {
+  text-align-last: right;
+}
+
+.p-text-transform {
+  text-transform: uppercase;
+}
+
+.p-text-indent {
+  text-indent: 20px;
+}
+
+.p-letter-spacing {
+  letter-spacing: 3px;
+}
+
+.p-word-spacing {
+  word-spacing: 10px;
+}
+
+.p-white-space {
+  white-space: nowrap;
+}
+
+.p-text-shadow {
+  /*x offset; y offset; blur; color*/
+  text-shadow: 2px 2px 10px blue;
+}
+
+.p-text-overflow {
+  /*overflow: hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;*/
+}
+
+.p-line-height {
+  line-height: 1.2;
+}
+
+.p-writing-mode {
+  writing-mode: vertical-lr;
+}
+
+.p-text-indent {
+  /*text-decoration-line: line-through overline;
+  text-decoration-color: black;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 5px;*/
+}
+
+.p-text-indent2 {
+  text-align-last: right;
+
+  /*direction: ltr;*/
+
+  /*text-decoration-line: line-through overline;
+  text-decoration-color: black;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 5px;*/
+
+  /* text-transform: uppercase; */
+
+  text-indent: 20px;
+  /* só faz sentido em p*/
+  /*letter-spacing: 3px;*/
+  word-spacing: 10px;
+  /*white-space: nowrap;*/
+  /* controlo de linhas*/
+
+  /*x offset; y offset; blur; color*/
+  /*text-shadow: 2px 2px 10px blue;*/
+
+  /*overflow: hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;*/
+
+  /*writing-mode: vertical-lr;*/
+
+  line-height: 1.2;
+}
+
+span {
+  text-decoration: line-through green;
+}

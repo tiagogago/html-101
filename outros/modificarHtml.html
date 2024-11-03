@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/outros/css1/style.css" />
+  </head>
+  <body>
+    <p>Academia FLAG</p>
+    <script>
+      const body = document.querySelector("body");
+      const div1 = document.createElement("div");
+      //esta:
+      div1.setAttribute("id", "primeiro");
+      //ou
+      //esta:
+      // div1.id = 'primeiro';
+      div1.classList.add("primeiro");
+      div1.innerHTML = "Primeiro";
+
+      const p = document.createElement("p");
+      p.innerHTML = "Segundo";
+      const div2 = document.createElement("div");
+      div2.id = "segundo";
+      div2.appendChild(p);
+
+      const texto = document.createTextNode("Antes...");
+      div2.insertBefore(texto, div2.childNodes[0]);
+
+      const div3 = div2.cloneNode(true);
+      const div4 = div2.cloneNode(false);
+
+      body.appendChild(div1);
+      body.appendChild(div2);
+      body.appendChild(div3);
+      body.appendChild(div4);
+      console.log(div2);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css1/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="primeiro">
+        <!--esta maneira com o onclick dentro da div-->
+      <a href="http://www.google.com" onclick="nevegarEm5s(event)">GOOGLE</a>
+    </div>
+    <script>
+      function navegarEm5s(e) {
+        e.preventDefault();
+        console.log("Parou e não navegou...");
+        console.log(e.target);
+        console.log(e.target.href);
+        setTimeout(() => {
+          const url = e.target;
+          window.location.href = e.target.href;
+        }, 5000);
+      }
+      //ou desta maneira...
+      const a = document.querySelector("a");
+      a.onclick = navegarEm5s;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css1/style.css" />
+  </head>
+  <body>
+    <form action="">
+      <input type="text" id="nome" placeholder="Username" />
+      <input type="submit" value="Enviar" />
+    </form>
+    <script>
+      const form = document.querySelector("form");
+      const div = document.querySelector("div");
+      const patternNome = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/;
+      //O evento é na form e não no clique do botão!
+      form.nome.addEventListener("keyup", (e) => {
+        if (patternNome.test(e.target.value)) {
+          e.target.setAttribute("class", "success");
+        } else {
+          e.target.setAttribute("class", "error");
+        }
+      });
+
+      form.addEventListener("submit", (e) => {
+        //Parar a execução normal que seria definida no action da form
+        e.preventDefault();
+        //Notação mais simples.. pode ser pelo id ou pelo name
+        console.log(form.nome.value);
+        if (patternNome.test(form.nome.value)) {
+          div.innerText = "Nome válido";
+        } else {
+          div.innerText =
+            "Nome inválido.. Tem de indicar entre 6 a 10 caracteres";
+        }
+      });
+    </script>
+  </body>
+</html>

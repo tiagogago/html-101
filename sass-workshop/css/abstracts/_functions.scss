@@ -1,0 +1,22 @@
+.container {
+    background-color: red;
+
+    &__list {
+        background-color: green;
+        border: 1px solid red;
+    }
+
+    &__item {
+        background-color: yellow;
+
+        &:hover {
+            background-color: blue;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+        }
+    }
+}

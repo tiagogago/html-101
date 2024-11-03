@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //localStorage.setItem('nome','Pedro');
+      //localStorage.setItem('idade',25);
+
+      const name = localStorage.getItem('nome');
+      const idade = localStorage.getItem('idade');
+
+      console.log(name, idade);
+
+      const formandos = [
+          {
+              nome: 'Maria',
+              idade: 30
+          },
+          {
+              nome: 'Paulo',
+              idade: 50
+          },
+          {
+              nome: 'Ana',
+              idade: 25
+          }
+      ];
+      console.log(formandos);
+      console.log(JSON.stringify(formandos));
+      localStorage.setItem('formandos', JSON.stringify(formandos));
+
+      const furmandoGet = JSON.parse(localStorage.getItem('formandos'));
+      console.log(furmandoGet);
+    </script>
+  </body>
+</html>

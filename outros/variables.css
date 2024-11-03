@@ -1,0 +1,17 @@
+:root {
+  --red: rgb(155, 0, 0);
+  --size1: 320px;
+  --size2: calc(100vw - 350px);
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  background-color: var(--red);
+  height: var(--size1);
+  width: var(--size2);
+  margin: var(--size3);
+  /* this variable doesn't exist, and we don't have any warning of that*/
+}

@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 20px;
+}
+
+@keyframes nomeAnim {
+  from {
+    background-color: green;
+  }
+
+  to {
+    background-color: red;
+  }
+}
+
+@keyframes nomeAnim2 {
+  0% {
+    background-color: green;
+    border-radius: 0;
+    left: 0;
+  }
+
+  33.33% {
+    background-color: yellow;
+    left: 200px;
+  }
+
+  66.66% {
+    background-color: yellow;
+    left: 200px;
+  }
+
+  100% {
+    background-color: green;
+    border-radius: 0;
+    left: 0;
+  }
+}
+
+.example1 {
+  position: absolute;
+  background-color: green;
+  height: 100px;
+  width: 100px;
+  animation-name: nomeAnim2;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}

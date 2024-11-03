@@ -1,0 +1,11 @@
+.letters {
+  display: flex;
+  justify-content: space-between;
+}
+
+.letter {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}

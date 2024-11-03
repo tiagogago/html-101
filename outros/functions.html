@@ -1,0 +1,89 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Functions</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="functions.css">
+</head>
+
+<body>
+    <h1>CSS (calc) Functions</h1>
+    <h2>Calc</h2>
+    <section>
+        <p>In this case we are setting on the child the width: <b>  width: calc(50% + 50px)</b>, our parent is 400px x 400px, so 50% of
+            that
+            width is 200px. So, we are using the calc function to add that 50%(200px) to 50px, giving our child the 250px width.</p>
+        <div class="container">
+            <div class="child-calc"></div>
+        </div>
+    </section>
+    <h2>Min</h2>
+    <section>
+        <p>In this case we are setting on the child the width: <b>min(200px, 60%)</b>, our parent is 400px x 400px, so 60% of
+            that
+            width is 240px. So, 60% is bigger than 200px, so in this scenario the 200px value is being used by our min
+            function</p>
+        <div class="container">
+            <div class="child-one"></div>
+        </div>
+    </section>
+    <section>
+        <p>In this case we are setting on the child the width: <b>min(300px, 60%)</b>, our parent is 400px x 400px, so 60% of
+            that
+            width is 240px. So, 60% is smaller than 300px, so in this scenario the 60% value is being used by our min
+            function</p>
+        <div class="container">
+            <div class="child-two"></div>
+        </div>
+    </section>
+    <h2>Max</h2>
+    <section>
+        <p>In this case we are setting on the child the width: <b>max(200px, 60%)</b>, our parent is 400px x 400px, so 60% of
+            that
+            width is 240px. So, 60% is bigger than 200px, so in this scenario the 60% value is being used by our max
+            function</p>
+        <div class="container">
+            <div class="child-three"></div>
+        </div>
+    </section>
+    <section>
+        <p>In this case we are setting on the child the width: <b>max(300px, 60%)</b>, our parent is 400px x 400px, so 60% of
+            that
+            width is 240px. So, 60% is smaller than 300px, so in this scenario the 300px value is being used by our max
+            function</p>
+        <div class="container">
+            <div class="child-four"></div>
+        </div>
+    </section>
+    <h2>Clamp</h2>
+    <section>
+        <p>In this case we are setting on the child the width: <b>clamp(200px, 40%, 300px)</b>, our parent is 400px x 400px, so 40% of
+            that
+            width is 160px. Being smaller than our min value (200px), the 200px value will be used</p>
+        <div class="container">
+            <div class="child-clamp"></div>
+        </div>
+    </section>
+    <section>
+        <p>In this case we are setting on the child the width: <b>clamp(200px, 40%, 300px)</b>, our parent is 800px x 400px, so 40% of
+            that
+            width is 320px. Being bigger than our max value (300px), the 300px value will be used</p>
+        <div class="container-two">
+            <div class="child-clamp"></div>
+        </div>
+    </section>
+    <section>
+        <p>In this case we are setting on the child the width: <b>clamp(200px, 40%, 300px)</b>, our parent is 600px x 400px, so 40% of
+            that
+            width is 240px. Being bigger than our min value (200px) and smaller than our max (300px), the 40% value(240px) will be used</p>
+        <div class="container-three">
+            <div class="child-clamp"></div>
+        </div>
+    </section>
+</body>
+
+</html>

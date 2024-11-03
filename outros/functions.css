@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 12px;
+}
+
+section {
+  margin-bottom: 24px;
+}
+
+p {
+  width: 800px;
+}
+
+.container {
+  background-color: red;
+  width: 400px;
+  height: 400px;
+}
+
+.child-calc {
+  background-color: blue;
+  width: calc(50% + 50px);
+  height: 200px;
+}
+
+.child-one {
+  background-color: blue;
+  width: min(200px, 60%);
+  height: 200px;
+}
+
+.child-two {
+  background-color: blue;
+  width: min(300px, 60%);
+  height: 200px;
+}
+
+.child-three {
+  background-color: blue;
+  width: max(200px, 60%);
+  height: 200px;
+}
+
+.child-four {
+  background-color: blue;
+  width: max(300px, 60%);
+  height: 200px;
+}
+
+.container-two {
+  background-color: red;
+  width: 800px;
+  height: 400px;
+}
+
+.container-three {
+  background-color: red;
+  width: 600px;
+  height: 400px;
+}
+
+.child-clamp {
+  background-color: blue;
+  width: clamp(200px, 40%, 300px);
+  height: 200px;
+}

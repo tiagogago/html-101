@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul></ul>
+    <script>
+      const paises = async () => {
+        const response = await fetch("https://restcountries.com/v3.1/all"); //ou ...await fetch('dados.json')
+        if (response.status != 200) {
+          throw new Error("Erro na requisição");
+        }
+        const data = await response.json();
+        return data;
+      };
+
+      paises()
+        .then((data) => {
+          //tenho de percorrer o array data e criar o LI para cada pais
+          var paises = "";
+          data.forEach((pais) => {
+            paises += `<li>${pais.name.common}</li>`;
+          });
+          console.log(paises);
+          document.querySelector("ul").innerHTML = paises;
+        })
+        .catch((err) => console.log("Surgiu um erro", err.message));
+
+      console.log("Depois de chamar a função paises");
+    </script>
+  </body>
+</html>

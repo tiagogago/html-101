@@ -1,0 +1,53 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/functions";
+
+@import "vendors/normalize";
+
+@import "base/base";
+@import "base/fonts";
+@import "base/typography";
+
+
+
+
+.header {
+    height: $header-height;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.header-left {
+    font-size: 100px;
+    width: 100px;
+    float: left;
+}
+
+.header-right {
+    font-size: 100px;
+    width: 100px;
+    float: right;
+    &:hover .menu-items {
+        display: block;
+    }
+}
+
+.menu-items {
+    font-size: 100px;
+    float: right;
+    background-color: white;
+    text-align: center;
+    width: 50vw;
+    height: calc(100vh - $header-height);
+    display: none;
+    p {
+        font-weight: light;
+        color: gray;
+        &:hover {
+            font-weight: bold;
+            color: black;
+        }
+
+    }
+
+}

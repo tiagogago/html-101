@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 12px;
+}
+
+section {
+  margin-bottom: 24px;
+}
+
+p {
+  width: 800px;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+}
+
+th,
+td {
+  padding: 12px;
+}
+
+table {
+  border-spacing: 50px; /* space between borders */
+  caption-side: bottom; /* controls caption position*/
+  empty-cells: hide; /* controls if we show or not empty cells*/
+  border-collapse: collapse; /* Specifies whether or not table borders should be collapsed */
+}

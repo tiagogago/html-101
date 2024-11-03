@@ -1,0 +1,12 @@
+//@Use utilitário do SASS
+@use "sass:math"; //calculo Matemático
+
+//@Function nomeDaFunção(...$argumentos){}
+//math.div permiter fazer divisao entre dois valores
+//interpolation  - portal para sass no css
+//#{qualquer coisa(sass)} ... css
+// @return #{$math.div($value, 16px)}rem;
+@function rem($value : 16px) {
+    $new-value: math.div($value, 16px);
+    @return #{$new-value}rem;
+}

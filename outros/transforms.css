@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 12px;
+}
+
+section {
+  margin-bottom: 24px;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+p {
+  width: 800px;
+}
+
+.translate {
+  background-color: yellow;
+  width: 100px;
+  height: 100px;
+  transform: translate(10px, 10px);
+}
+
+.rotate {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  transform: rotate(20deg);
+  transform-origin: top left;
+}
+
+.scale {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  transform-origin: top left;
+  transform: scale(0.5, 1);
+}
+
+.skew {
+  background-color: green;
+  width: 100px;
+  height: 100px;
+  transform: skew(10deg, 10deg);
+}
+
+.matrix {
+  background-color: violet;
+  width: 100px;
+  height: 100px;
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+  /* matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+}

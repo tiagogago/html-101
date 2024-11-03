@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/outros/css1/style.css" />
+  </head>
+  <body>
+    <div mover id="primeiro" class="destaque">Mover</div>
+    <script>
+      const item = document.querySelector("[mover]");
+      item.style.position = "absolute";
+      item.onmousemove = (e) => {
+        //console.log(e.target);
+        //console.log(e.buttons);
+
+        const item = e.target;
+        item.style.cursor = "move";
+        if (e.buttons) {
+          //console.log(e.clientX, e.clientY);
+          item.style.top = `${e.clientY - item.clientHeight / 2}px`;
+          item.style.left = `${e.clientX - item.clientWidth / 2}px`;
+        }
+      };
+    </script>
+  </body>
+</html>

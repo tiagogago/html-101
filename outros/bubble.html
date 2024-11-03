@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <ul>
+        <li>Ponto 1</li>
+        <li>Ponto 2</li>
+        <li>Ponto 3</li>
+      </ul>
+    </div>
+    <script>
+      const div = document.querySelector("div");
+      const ul = document.querySelector("ul");
+      const li = document.querySelectorAll("li");
+      div.addEventListener("click", (e) => {
+        console.log("DIV");
+        console.log(e.target);
+      });
+      ul.addEventListener("click", (e) => {
+        console.log("UL");
+        console.log(e.target);
+      });
+      li.forEach((element) => {
+        element.addEventListener("click", (e) => {
+          console.log("LI");
+          console.log(e.target);
+        });
+      });
+      const element = document.createElement("li");
+      element.textContent = "Opção 4";
+      ul.append(element);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  background-color: green;
+
+  &__bar-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__links {
+    display: flex;
+  }
+
+  &__item-anchor {
+    color: white;
+    padding: $xxs;
+
+    &:hover {
+      background-color: darkgreen;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+  }
+
+  &__action-icon {
+    height: 20px;
+  }
+
+  &__bar--black {
+    background-color: black;
+  }
+
+  &__item-anchor--small {
+    color: white;
+    padding: $xxs;
+
+    &:hover {
+      background-color: inherit;
+      color: green;
+    }
+  }
+}

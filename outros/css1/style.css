@@ -1,0 +1,109 @@
+#primeiro {
+    width: 300px;
+    margin: 20px auto;
+    border-style: solid;
+    border-color: coral;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    padding: 15px;
+}
+#segundo {
+    width: 300px;
+    margin: 20px auto;
+    border-style: solid;
+    border-color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    padding: 15px;
+}
+#segundo p {
+    color: blue;
+}
+.terceiro {
+    width: 300px;
+    margin: 20px auto;
+    border-style: solid;
+    border-color: darkcyan;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    padding: 15px;
+}
+
+.destaque {
+    background-color: chartreuse;
+}
+
+.formulario {
+    width: 400px;
+    margin: auto;
+    background-color: cornflowerblue;
+}
+
+.formulario h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.formulario form {
+    margin: 30px;
+}
+
+.formulario input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.formulario select {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.formulario button {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.esquerda {
+    background-color: crimson;
+}
+
+.direita {
+    background-color: darkcyan;
+}
+
+.item {
+    width: 300px;
+    margin: 20px auto;
+    border-style: solid;
+    border-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    padding: 15px;
+}
+
+.success {
+    border: 2px solid limegreen;
+    outline: none;
+}
+
+.error {
+    border: 2px solid red;
+    outline: none;
+}

@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 12px;
+}
+
+section {
+  margin-bottom: 24px;
+}
+
+p {
+  width: 800px;
+}
+
+@keyframes nomeAnim {
+  from {
+    background-color: red;
+  }
+
+  to {
+    background-color: green;
+  }
+}
+
+.animation-1 {
+  position: relative;
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  animation-name: nomeAnim2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  /*animation-direction: reverse;*/
+  animation-timing-function: cubic-bezier(0.27, 0.87, 0.63, 0.67);
+
+  /*animation: 5s nomeAnim2 infinite;*/
+}
+
+@keyframes nomeAnim2 {
+  0% {
+    background-color: red;
+    left: 0;
+  }
+
+  50% {
+    background-color: green;
+    left: 400px;
+  }
+
+  100% {
+    background-color: red;
+    left: 800px;
+  }
+}
+
+.animation-2 {
+  position: relative;
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  animation-name: nomeAnim2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  /*animation-direction: reverse;*/
+  animation-timing-function: cubic-bezier(0.27, 0.87, 0.63, 0.67);
+
+  /*animation: 5s nomeAnim2 infinite;*/
+}

@@ -1,0 +1,52 @@
+.top-bar {
+  align-items: center;
+  background-color: #222222;
+  width: 100%;
+
+  &__container {
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left-column {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__image {
+    height: 35px;
+  }
+
+  &__links {
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+
+  &__link-anchor {
+    color: rgba(255, 255, 255, 0.66);
+    text-transform: uppercase;
+    padding: 10px;
+
+    &:hover {
+      color: #5b8f22;
+    }
+    &:visited {
+      color: #ffffff;
+    }
+  }
+
+  &__actions {
+    display: flex;
+  }
+
+  &__action-anchor {
+    color: rgba(255, 255, 255, 0.66);
+    padding: 16px 4px;
+    :hover {
+      color: rgb(255, 255, 255);
+    }
+  }
+}

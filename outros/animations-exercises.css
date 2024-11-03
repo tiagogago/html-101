@@ -1,0 +1,88 @@
+@keyframes nomeAnim2 {
+  0% {
+    left: 0;
+    top: 0;
+  }
+
+  20% {
+    left: 400px;
+    top: 0;
+  }
+
+  40% {
+    left: 400px;
+    top: 400px;
+  }
+
+  60% {
+    left: 400px;
+    top: 400px;
+    border-radius: 100px;
+  }
+
+  80% {
+    left: 0;
+    top: 400px;
+  }
+
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+.anim1 {
+  position: absolute;
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  left: 0;
+  top: 0;
+  animation-name: nomeAnim2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes nomeAnim {
+  0% {
+    width: 200px;
+    background-color: green;
+  }
+
+  20% {
+    background-color: red;
+  }
+
+  40% {
+    width: 500px;
+    background-color: red;
+  }
+
+  60% {
+    background-color: yellow;
+  }
+
+  80% {
+    width: 50px;
+    background-color: yellow;
+  }
+
+  100% {
+    width: 200px;
+    background-color: green;
+  }
+}
+
+.anim2 {
+  position: absolute;
+  background-color: green;
+  width: 200px;
+  height: 20px;
+  left: 0;
+  top: 500px;
+  animation-name: nomeAnim;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}

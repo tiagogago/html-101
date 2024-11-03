@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selecionar elementos 1</title>
+    <link rel="stylesheet" href="/outros/css1/style.css" />
+  </head>
+  <div class="primeiro" id="primeiro">
+    <a href="http://flag.pt">FLAG</a><br />
+    <label for="compras">Compras</label>
+    <ul id="compras" destino="escritorio" dataurgencia="5">
+      <li>Café</li>
+      <li>Água</li>
+      <li>Copos</li>
+    </ul>
+  </div>
+  <div id="segundo">
+    <ul>
+      <li>Pedro</li>
+      <li>Angela</li>
+      <li>Rui</li>
+    </ul>
+    <img src="../outros/images/flag.png" alt="Logotipo FLAG"
+  </div>
+  <body>
+    <div class="primeiro" id="primeiro">Primeiro</div>
+    <div id="segundo"><p>Segundo</p></div>
+    <div class="terceiro">Terceiro</div>
+    <div class="primeiro terceiro">Outro terceiro</div>
+
+    <script>
+      /*const primeiroElemento = document.getElementById('primeiro');
+        console.log('primeiroElemento' ,primeiroElemento);
+        if (primeiroElemento) {
+            primeiroElemento.classList.add('destaque');
+        } */
+      document.getElementById("primeiro").classList.add("destaque");
+      console.log("Adicionar a class destaque ao elemento");
+
+      const divs = document.getElementByIdTagName("div");
+      const divsArray = [...divs];
+      divsArray.forEach((e) => e.classList.add("destaque"));
+
+      const terceiros = document.getElementsByClassName("terceiro");
+      for (let e of terceiros) {
+        e.classList.remove("destaque");
+      }
+
+      document.querySelector("#primeiro").classList.remove("destaque");
+
+      const divsQuery = document.querySelectorAll("div");
+      divsQuery.forEach((e) => e.classList.add("destaque"));
+
+      const selecionar = (seletor) => {
+        const elementos = document.querySelectorAll(seletor);
+        elementos.forEach((e) => e.classList.remove("destaque"));
+      };
+
+      deselecionar("*");
+      //selecionar("div");
+
+      const escritorio = document.querySelector('div ul["des"]');
+      console.log(escritorio);
+    </script>
+  </body>
+</html>

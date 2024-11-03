@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/outros/css1/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="esquerda" dropzone>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+      </div>
+      <div class="direita" dropzone></div>
+    </div>
+    <script>
+      const items = document.querySelectorAll("[dropzone] .item");
+      items.forEach((item, index) => {
+        item.draggable = true;
+        item.id = item.id || `draggable-item-${index}`;
+        item.ondragstart = (e) => {
+          e.dataTransfer.setData("item-id", e.target.id);
+        };
+      });
+
+      const dropzones = document.querySelectorAll("[dropzone]");
+      dropzones.forEach((dropzone) => {
+        dropzone.ondragover = (e) => e.preventDefault();
+        dropzone.ondrop = (e) => {
+          const id = e.dataTransfer.getData("item-id");
+          const item = document.getElementById(id);
+          dropzone.appendChild(item);
+        };
+      });
+    </script>
+  </body>
+</html>

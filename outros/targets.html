@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>Primeiro botão</button><br /><br />
+    <button>
+      Segundo <strong>botão <strong>aninhado</strong> </strong></button
+    ><br /><br />
+    <button>Terceiro Botão</button>
+    <script>
+      const buttons = document.querySelectorAll("button");
+      buttons.forEach((button) => {
+        button.addEventListener("click", (e) => {
+          console.log("Current target: ", e.currentTarget);
+          //O target apanha o elemento efetivamente clicado!
+          console.log("Target: ", e.target);
+          e.currentTarget.style.color = "red";
+          //Verificar com o target
+          e.target.style.color = 'green';
+        });
+      });
+    </script>
+  </body>
+</html>

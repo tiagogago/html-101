@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 12px;
+}
+
+section {
+  margin-bottom: 24px;
+}
+
+p {
+  width: 800px;
+}
+
+.scene {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #CCC;
+  margin: 40px;
+}
+
+.panel {
+  width: 100%;
+  height: 100%;
+  background: red;
+  /* perspective function in transform property */
+  transform: perspective(600px) rotateY(45deg);
+}
+/*
+.scene {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #CCC;
+  margin: 40px;
+  perspective: 600px;
+}
+
+.panel {
+  width: 100%;
+  height: 100%;
+  background: blue;
+  transform: rotateY(45deg);
+}
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/perspective
+https://www.w3schools.com/cssref/css3_pr_perspective.php
+https://3dtransforms.desandro.com/perspective
+
+https://www.youtube.com/watch?v=niwUUtgn4-o
+*/
